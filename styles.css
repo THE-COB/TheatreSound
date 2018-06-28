@@ -1,0 +1,67 @@
+body {
+	background-color: #111;
+	font-family: "Segoe UI",Arial,sans-serif;
+	color: #ccc;
+}
+table {
+	border-collapse: collapse;
+}
+th, td {
+	border-bottom: 1px solid #222;
+	text-align: left;
+	padding: 5px;
+}
+tr, button {
+	-moz-transition: color .2s ease-in;
+	-o-transition: color .2s ease-in;
+	-webkit-transition: color .2s ease-in;
+	transition: all .2s ease-in;
+}
+tr:hover {
+	background-color: #222
+}
+button {
+	background-color: #111;
+	border: 0px;
+	border-radius: 2px;
+	padding: 2px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	color: #111;
+}
+tr:hover button {
+	background-color: #1c1c1c;
+	color: #ccc;
+}
+.volumepercent {
+	text-align: center;
+}
+#whapham {
+	position: fixed;
+	top: 0%;
+	left: 0%;
+}
+.whapham {
+	animation: rotate 1s linear infinite, move 3s linear infinite;
+}
+@keyframes rotate
+{
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes move {
+	0% {
+		top: 0vh;
+		left: 0vw;
+	}
+	
+	100% {
+		top: 100vh;
+		left: 100vw;
+	}
+}
